@@ -35,7 +35,7 @@ For challenge purpose, consider set of flowers and confirm the freshness index
 
 ### Model
 
-<img src="Flower Freshness Index/model_summary.jpg" title="Model Summary">
+<img src="https://github.com/sahilrider/Machine-Vision-Challenge/blob/master/Flower%20Freshness%20Index/model_summary.JPG" title="Model Summary">
 
 ### Result
 
@@ -43,8 +43,8 @@ Training Set Accuracy :   85.03% <br>
 Validation Set Accuracy : 83.99% <br>
 Test Set Accuracy : 77.5% <br>
 
-<img src="Flower Freshness Index/predict_fresh.jpg" title="Fresh Flower">
-<img src="Flower Freshness Index/predict_wilted.jpg" title="Wilted Flower">
+<img src="https://github.com/sahilrider/Machine-Vision-Challenge/blob/master/Flower%20Freshness%20Index/predict_fresh.JPG" title="Fresh Flower">
+<img src="https://github.com/sahilrider/Machine-Vision-Challenge/blob/master/Flower%20Freshness%20Index/predict_wilted.JPG" title="Wilted Flower">
 
 ### Testing Project
 
