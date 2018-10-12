@@ -11,6 +11,8 @@ There were four sub challenges. They are:
 
 I have attempted to solve two challenges which are <i>Flower freshness index</i> and <i>Baggage fitment index.</i>
 
+<hr>
+
 ## Flower Freshness Index
 
 ### Problem Statement
@@ -64,6 +66,8 @@ Test Set Accuracy : 77.5% <br>
 <li> Run the notebook
 </ul>
 
+<hr>
+
 ## Baggage Fitment Index
 
 ### Problem Statement
@@ -72,3 +76,36 @@ Normally overhead cabins in the aircraft are constrained by dimensions. So overs
 For this challenge, assume two views of the camera are available.
 
 ### Approach
+
+For solving this problem it is assumed that there are two views of the camera which are perpendicular to each other. Let us assume there is a scenario where luggages are passed and two perpendicular views of the luggage is captured. Now for measuring the dimension, we have taken a reference object whose dimensions are already known. Now as we know the dimension of the reference object, other's dimensions can be calculated wrt to that.
+<br>
+To solve this problem, I have used **opencv**.
+<ul>
+<li> First I applied Canny edge detection on the image.
+<li> Found all the contours from the image
+<li> Assumed the leftmost contour to be reference object and calculated pixelsPerMetric metric to calculate the dimensions.
+<li> Calculated dimensions of all other contours.
+<li> Assuming the baggage to be the largest object in the image. Dimensions of largest one is returned.
+<li> From two images now we will have all the dimensions needed.
+<li> These dimensions can be compared with the original constraints to see the baggage will fit or needs to be dropped.
+</ul>
+
+### Result
+
+Original Dimension : 18 x 6 x 5.5
+<br>
+Observed Dimension : 18.88 x 6.52 x 6.14
+
+Result can be improved by adding margin of error to the reference object.
+
+### Testing Project
+
+<ul>
+<li> Install all dependencies 
+<li> Write <i>python final.py</i> in command prompt, or
+<li> Run the notebook using Anaconda
+</ul>
+
+# End Notes
+
+Both challenges were solved in a span of 7 days. For increasing accuracy more time needs to be invested. All above mentioned projects are good and can be taken as a capstone project and they will yield good results.
