@@ -11,9 +11,9 @@ There were four sub challenges. They are:
 
 I have attempted to solve two challenges which are <i>Flower freshness index</i> and <i>Baggage fitment index.</i>
 
-# Flower Freshness Index
+## Flower Freshness Index
 
-## Problem Statement
+### Problem Statement
 In Hotels, flowers are kept in flowerpots to create ambient experience. This looks
 good till the flowers are fresh. When flowers are wilted, the effect is reversed.. So it is important to check the
 freshness and keep it changed to retain the high level customer experience. This manual task can be automated
@@ -22,7 +22,7 @@ by human.
 <br>
 For challenge purpose, consider set of flowers and confirm the freshness index
 
-## Approach
+### Approach
 <ul>
 <li>For this challenge a scraped various types of flowers image from google.
 <li>I divided entire image into two classes <i>fresh</i> and <i>wilted</i> and three sets which are <i>train</i>, <i>validation</i> and <i>test</i> set.
@@ -31,11 +31,11 @@ For challenge purpose, consider set of flowers and confirm the freshness index
 <li>Further, Model is tested on the test data and prediction was made.
 </ul>
 
-## Model
+### Model
 
 <img src="Flower Freshness Index/model_summary.jpg" title="Model Summary">
 
-## Result
+### Result
 
 Training Set Accuracy :   85.03% <br>
 Validation Set Accuracy : 83.99% <br>
@@ -44,9 +44,9 @@ Test Set Accuracy : 77.5% <br>
 <img src="Flower Freshness Index/predict_fresh.jpg" title="Fresh Flower">
 <img src="Flower Freshness Index/predict_wilted.jpg" title="Wilted Flower">
 
-## How to Use this notebook
+### Testing Project
 
-### Method 1 : On Google Colab
+#### Method 1 : On Google Colab
 <ul>
 <li>Unzip the data file
 <li>Upload whole folder to google drive
@@ -55,7 +55,7 @@ Test Set Accuracy : 77.5% <br>
 <li>Run the notebook
 </ul>
 
-### Method 2 : Using Anaconda
+#### Method 2 : Using Anaconda
 
 <ul>
 <li> Install all dependencies
@@ -64,11 +64,11 @@ Test Set Accuracy : 77.5% <br>
 <li> Run the notebook
 </ul>
 
-# Baggage Fitment Index
+## Baggage Fitment Index
 
-## Problem Statement
+### Problem Statement
 Normally overhead cabins in the aircraft are constrained by dimensions. So oversized baggage creates a lot of problems including delay when they are allowed to board the cabin. So before onboarding the passenger, baggage needs to be measured and indicate the customer to drop to luggage section. Few airports have physical model to do this task of fitment check. However it is cumbersome and time consuming, so it is advisable to use machine vision techniques so that customer need not do any additional task, thus creating superior customer experience.
 <br>
 For this challenge, assume two views of the camera are available.
 
-## Approach
+### Approach
